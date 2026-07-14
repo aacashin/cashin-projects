@@ -175,43 +175,46 @@
     <p>Click a tile to open the full project.</p>
   </div>
 
-  <div class="projects">
-
-    <a class="tile live" href="showroom-dashboard.html">
-      <span class="tile-status live">Live</span>
-      <h3>Showroom Enhancement — Investment Dashboard</h3>
-      <p>The full proposal for the physical showroom upgrade: LED screen pricing, floor plan, reference videos, and final investment total.</p>
-      <span class="tile-cta">Open dashboard
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </span>
-    </a>
-
-    <a class="tile live" href="fullscreen-concept.html">
-      <span class="tile-status concept">Concept · Recommended</span>
-      <h3>Full-Screen Showroom Concept</h3>
-      <p>An alternative, LED-only showroom design: curved screen, floor plan, specs, pricing, and the case against the original build-out.</p>
-      <span class="tile-cta">Open concept
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </span>
-    </a>
-
-    <a class="tile live" href="events-conference-hall.html">
-      <span class="tile-status live">Live</span>
-      <h3>Events — Conference Hall Pricing Comparison</h3>
-      <p>Side-by-side quotes from six Riyadh venues for the CASHIN event: capacity, pricing, inclusions, and the recommended option.</p>
-      <span class="tile-cta">Open comparison
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </span>
-    </a>
-
+  <div class="projects" id="projects">
+    <p style="color:var(--slate); font-size:13.5px;">Loading projects…</p>
   </div>
 </main>
 
 <footer>CASHIN &middot; Marketing Projects — maintained by Ahmed</footer>
 
 <script>
-  document.getElementById('count-live').textContent =
-    document.querySelectorAll('.tile.live').length;
+  const arrowSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+  fetch('data/projects.json')
+    .then(r => r.json())
+    .then(data => {
+      const container = document.getElementById('projects');
+      container.innerHTML = '';
+      let liveCount = 0;
+
+      data.projects.forEach(p => {
+        const isLive = p.status === 'live' || p.status === 'concept';
+        if (p.status === 'live') liveCount++;
+
+        const el = document.createElement(isLive ? 'a' : 'div');
+        if (isLive) el.href = p.link;
+        el.className = 'tile' + (isLive ? ' live' : ' disabled');
+
+        el.innerHTML = `
+          <span class="tile-status ${p.status}">${p.status_label}</span>
+          <h3>${p.title}</h3>
+          <p>${p.description}</p>
+          <span class="tile-cta">${p.cta_label || 'Not yet available'} ${isLive ? arrowSvg : ''}</span>
+        `;
+        container.appendChild(el);
+      });
+
+      document.getElementById('count-live').textContent = liveCount;
+    })
+    .catch(() => {
+      document.getElementById('projects').innerHTML =
+        '<p style="color:var(--slate); font-size:13.5px;">Could not load projects right now.</p>';
+    });
 </script>
 
 </body>

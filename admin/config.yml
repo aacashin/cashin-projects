@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    files:
+      - name: "projects_list"
+        label: "Project Tiles"
+        file: "data/projects.json"
+        description: "These are the cards shown on the homepage. Order here is the order they appear on the site."
+        fields:
+          - name: "projects"
+            label: "Projects"
+            label_singular: "Project"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "link", label: "Link (filename of the project's html page)", widget: "string" }
+              - name: "status"
+                label: "Status"
+                widget: "select"
+                options:
+                  - { label: "Live", value: "live" }
+                  - { label: "Concept", value: "concept" }
+                  - { label: "Coming soon", value: "soon" }
+              - { name: "status_label", label: "Status Badge Text", widget: "string" }
+              - { name: "cta_label", label: "Button Text", widget: "string" }

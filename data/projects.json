@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Showroom Enhancement — Investment Dashboard",
+      "description": "The full proposal for the physical showroom upgrade: LED screen pricing, floor plan, reference videos, and final investment total.",
+      "link": "showroom-dashboard.html",
+      "status": "live",
+      "status_label": "Live",
+      "cta_label": "Open dashboard"
+    },
+    {
+      "title": "Full-Screen Showroom Concept",
+      "description": "An alternative, LED-only showroom design: curved screen, floor plan, specs, pricing, and the case against the original build-out.",
+      "link": "fullscreen-concept.html",
+      "status": "concept",
+      "status_label": "Concept · Recommended",
+      "cta_label": "Open concept"
+    },
+    {
+      "title": "Events — Conference Hall Pricing Comparison",
+      "description": "Side-by-side quotes from six Riyadh venues for the CASHIN event: capacity, pricing, inclusions, and the recommended option.",
+      "link": "events-conference-hall.html",
+      "status": "live",
+      "status_label": "Live",
+      "cta_label": "Open comparison"
+    }
+  ]
+}
