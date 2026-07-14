@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>CASHIN — July 2026 Content Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003087;
+    --navy-deep:#001B4D;
+    --teal:#00CC99;
+    --ink:#0A1330;
+    --slate:#5A6B85;
+    --mist:#EEF1F7;
+    --line:#243A6B;
+    --card-line:#E4E9F4;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', Arial, sans-serif;
+    background:var(--mist);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif;}
+  [lang="ar"]{font-family:'Alexandria','Inter',sans-serif;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:linear-gradient(180deg, #000C2E 0%, var(--navy-deep) 50%, var(--navy) 100%);
+    color:#fff;
+    padding:64px 32px 56px;
+    overflow:hidden;
+  }
+  .hero-inner{max-width:1180px; margin:0 auto;}
+  .kicker{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12px; letter-spacing:1.6px; text-transform:uppercase;
+    color:var(--teal); font-weight:600; margin-bottom:18px;
+  }
+  .kicker::before{
+    content:""; width:7px; height:7px; border-radius:50%; background:var(--teal);
+    box-shadow:0 0 0 4px rgba(0,204,153,.18);
+  }
+  .hero h1{font-size:clamp(30px,4.2vw,42px); font-weight:700; line-height:1.15; max-width:760px;}
+  .hero p{margin-top:14px; max-width:640px; font-size:15.5px; line-height:1.7; color:#AAB6D6;}
+  .hero-stats{display:flex; gap:32px; margin-top:32px; flex-wrap:wrap;}
+  .hero-stats div{border-left:2px solid var(--line); border-right:2px solid var(--line); padding:0 16px;}
+  .hero-stats .num{font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700;}
+  .hero-stats .lbl{font-size:11.5px; color:#8FA0CC; margin-top:2px;}
+
+  /* ---------- MAIN ---------- */
+  main{max-width:1180px; margin:0 auto; padding:0 32px 80px;}
+  .part-section{padding-top:52px;}
+  .part-head{margin-bottom:22px;}
+  .part-index{
+    display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.6px;
+    color:var(--navy); background:rgba(0,48,135,.08); padding:4px 12px; border-radius:20px;
+    margin-bottom:10px;
+  }
+  .part-head h2{font-size:22px; font-weight:700; color:var(--navy-deep);}
+
+  .posts-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:22px;}
+
+  .post-card{
+    background:#fff; border-radius:16px; border:1px solid var(--card-line);
+    overflow:hidden; box-shadow:0 2px 14px rgba(10,19,48,.05);
+    display:flex; flex-direction:column;
+  }
+  .post-media{aspect-ratio:16/9; background:var(--ink);}
+  .post-media img{width:100%; height:100%; object-fit:cover; display:block;}
+  .post-body{padding:20px 22px 22px;}
+  .post-meta{font-size:11.5px; font-weight:700; letter-spacing:.4px; color:var(--teal); text-transform:uppercase; margin-bottom:10px;}
+  .post-topic{font-size:16.5px; font-weight:700; color:var(--navy-deep); line-height:1.35; margin-bottom:6px;}
+  .post-headline{font-size:13px; color:var(--slate); line-height:1.5; margin-bottom:16px;}
+  .post-captions{display:flex; flex-direction:column; gap:12px; padding-top:14px; border-top:1px solid var(--card-line);}
+  .cap{font-size:13.5px; line-height:1.75; color:var(--ink);}
+  .cap-ar{text-align:right;}
+  .cap-en{color:var(--slate);}
+
+  footer{
+    border-top:1px solid #E4E9F4; padding:28px 32px; text-align:center;
+    color:var(--slate); font-size:12.5px;
+  }
+
+  @media (max-width:760px){
+    .posts-grid{grid-template-columns:1fr;}
+    .hero{padding:48px 20px 44px;}
+    main{padding:0 20px 60px;}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="kicker">CASHIN · Marketing</span>
+    <h1>July 2026 Content Calendar</h1>
+    <p>Twenty social posts covering AI, digital transformation, automation, and business growth — each with bilingual captions and finished creative, ready for review before publishing.</p>
+    <div class="hero-stats">
+      <div><div class="num">20</div><div class="lbl">Posts</div></div>
+      <div><div class="num">4</div><div class="lbl">Themes</div></div>
+      <div><div class="num">Jul 5–24</div><div class="lbl">Publish window</div></div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+      <section class="part-section">
+        <div class="part-head">
+          <span class="part-index">Posts 1–5</span>
+          <h2>AI</h2>
+        </div>
+        <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-01.jpg" alt="Data Doesn't Run Stations" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #01 &middot; Jul 5, 2026</div>
+            <h3 class="post-topic">Data Doesn't Run Stations. Decisions Do</h3>
+            <p class="post-headline">Data Doesn't Run Stations</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">كل محطة تمتلك بيانات.<br>لكن القيمة الحقيقية تبدأ عندما تتحول هذه البيانات إلى قرار... في الوقت المناسب.<br>CASHIN يحول البيانات إلى قرارات.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Every station generates data.<br>The real advantage comes from turning it into the right decision at the right moment.<br>CASHIN transforms data into action.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-02.jpg" alt="The Best Problems... Are the Ones You Never Have" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #02 &middot; Jul 6, 2026</div>
+            <h3 class="post-topic">Predict Before It Happens</h3>
+            <p class="post-headline">The Best Problems... Are the Ones You Never Have</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">أفضل القرارات...  هي التي تُتخذ قبل أن تتحول المشكلة إلى أزمة.<br>مع CASHIN، الاستباق هو البداية.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">The best decisions aren't reactive.<br>They're made before problems become disruptions.<br>CASHIN helps you stay one step ahead.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-03.jpg" alt="Reports Tell You What Happened. AI Tells You What To Do Next" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #03 &middot; Jul 7, 2026</div>
+            <h3 class="post-topic">From Reports to Recommendations</h3>
+            <p class="post-headline">Reports Tell You What Happened. AI Tells You What To Do Next</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">التقارير تخبرك بما حدث.<br>أما الذكاء الاصطناعي... فيقترح عليك الخطوة التالية.<br>CASHIN يحول البيانات إلى قرارات أذكى.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Reports explain the past.<br>AI recommends the next best action.<br>CASHIN turns insights into smarter decisions.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-04.jpg" alt="The Best Decisions Start With Better Visibility" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #04 &middot; Jul 8, 2026</div>
+            <h3 class="post-topic">See What Others Can't</h3>
+            <p class="post-headline">The Best Decisions Start With Better Visibility</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">أهم الفرص...  ليست دائمًا واضحة للجميع.<br>CASHIN يساعدك على رؤيتها قبل الآخرين.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">The biggest opportunities are often hidden in the data.<br>CASHIN helps you uncover them before anyone else.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-05.jpg" alt="Every Smart Station Needs an AI Brain" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #05 &middot; Jul 9, 2026</div>
+            <h3 class="post-topic">Every Smart Station Needs an AI Brain</h3>
+            <p class="post-headline">Every Smart Station Needs an AI Brain</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">المحطات الذكية...  لا تعتمد على البيانات فقط.<br>بل على ذكاء يقود كل قرار.<br>CASHIN هو العقل الذكي وراء العمليات الأكثر كفاءة.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Smart stations don't rely on data alone.<br>They rely on intelligence that guides every decision.<br>CASHIN is the AI brain behind smarter operations.</div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="part-section">
+        <div class="part-head">
+          <span class="part-index">Posts 6–10</span>
+          <h2>Digital Transformation</h2>
+        </div>
+        <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-06.jpg" alt="Digital Transformation Doesn't Start With Technology" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #06 &middot; Jul 10, 2026</div>
+            <h3 class="post-topic">Digital Transformation Is a Business Strategy</h3>
+            <p class="post-headline">Digital Transformation Doesn't Start With Technology</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">التحول الرقمي...  ليس مجرد تبني تقنية جديدة.<br>بل هو استراتيجية لبناء أعمال أكثر ذكاءً وتنافسية.<br>CASHIN يحول الاستراتيجية إلى واقع.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Digital transformation isn't about adopting new technology.<br>It's about building a smarter, more competitive business.<br>CASHIN helps turn strategy into execution.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-07.jpg" alt="A Smart Station Doesn't Work Harder. It Works Smarter" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #07 &middot; Jul 11, 2026</div>
+            <h3 class="post-topic">What Makes a Fuel Station Smart?</h3>
+            <p class="post-headline">A Smart Station Doesn't Work Harder. It Works Smarter</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">المحطة الذكية...  ليست ما تمتلكه من تقنيات.<br>بل ما تحققه من قرارات أسرع، وعمليات مترابطة، وأداء أفضل.<br>وهذه هي ميزة CASHIN.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">A smart station isn't defined by technology.<br>It's defined by faster decisions, connected operations, and better performance.<br>That's the CASHIN advantage.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-08.jpg" alt="Everything Connected" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #08 &middot; Jul 12, 2026</div>
+            <h3 class="post-topic">Disconnected Systems Create Disconnected Decisions</h3>
+            <p class="post-headline">Everything Connected</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">الأنظمة المنفصلة...  تُبطئ الأعمال.<br>وعندما تعمل جميع الأنظمة معًا، تصبح القرارات أسرع والعمليات أكثر ذكاءً.<br>CASHIN يربط كل ما يهم.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Disconnected systems slow your business down.<br>When everything works together, every decision becomes faster and every operation becomes smarter.<br>CASHIN connects what matters.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-09.jpg" alt="See Clearly Manage Better" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #09 &middot; Jul 13, 2026</div>
+            <h3 class="post-topic">Real-Time Visibility</h3>
+            <p class="post-headline">See Clearly Manage Better</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">لا يمكنك إدارة ما لا تستطيع رؤيته.<br>الرؤية اللحظية تمنحك الثقة لاتخاذ القرار... في كل دقيقة، وفي كل محطة.<br>CASHIN يمنحك رؤية فورية لما يحدث.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">You can't manage what you can't see.<br>Real-time visibility gives you the confidence to act—every minute, every station.<br>CASHIN keeps you connected in real time.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-10.jpg" alt="The Future Belongs to Connected Businesses" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #10 &middot; Jul 14, 2026</div>
+            <h3 class="post-topic">The Future Doesn't Need More Technology</h3>
+            <p class="post-headline">The Future Belongs to Connected Businesses</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">المستقبل...  لا يحتاج إلى المزيد من التقنيات.<br>بل إلى تقنيات تصنع قرارات أفضل، وعمليات أكثر كفاءة، ونتائج أقوى.<br>وهذا هو المستقبل الذي يبنيه CASHIN.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">The future doesn't need more technology.<br>It needs technology that creates better decisions, better operations, and better outcomes.<br>That's the future CASHIN is building.</div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="part-section">
+        <div class="part-head">
+          <span class="part-index">Posts 11–15</span>
+          <h2>Automation &amp; Operations</h2>
+        </div>
+        <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-11.jpg" alt="Automation replaces people" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #11 &middot; Jul 15, 2026</div>
+            <h3 class="post-topic">Automation Doesn't Replace People</h3>
+            <p class="post-headline">Automation replaces people</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">الأتمتة...  لا تستبدل الأشخاص.<br>بل تمنحهم الوقت للتركيز على ما يصنع الفارق.<br>CASHIN يعزز أداء الفرق بأتمتة ذكية.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Automation doesn't replace people.<br>It frees them to focus on what matters most.<br>CASHIN empowers teams with smarter automation.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-12.jpg" alt="The Most Expensive Process... Is The One You Repeat Every Day" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #12 &middot; Jul 16, 2026</div>
+            <h3 class="post-topic">Manual Work Is Expensive</h3>
+            <p class="post-headline">The Most Expensive Process... Is The One You Repeat Every Day</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">العمل اليدوي...  تكلفته أكبر مما تتخيل.<br>فالأخطاء والتأخير والفرص الضائعة هي الثمن الحقيقي.<br>CASHIN يؤتمت ما يبطئ أعمالك.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">The biggest cost isn't time.<br>It's the errors, delays, and missed opportunities that come with manual work.<br>CASHIN automates what slows your business down.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-13.jpg" alt="If A Process Needs Too Many Steps... Redesign It" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #13 &middot; Jul 17, 2026</div>
+            <h3 class="post-topic">Every Manual Step Is a Design Flaw</h3>
+            <p class="post-headline">If A Process Needs Too Many Steps... Redesign It</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">كل خطوة يدوية...  هي فرصة لتعقيد العمل.<br>الأنظمة الذكية تُبسط العمليات، ولا تُعقدها.<br>CASHIN صُمم ليجعل التشغيل أكثر سلاسة.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Every manual step creates friction.<br>The best systems remove complexity—not add to it.<br>CASHIN is designed for seamless operations.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-14.jpg" alt="You Can Recover Lost Revenue. You Can't Recover Lost Time" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #14 &middot; Jul 18, 2026</div>
+            <h3 class="post-topic">The Most Valuable Resource Isn't Money</h3>
+            <p class="post-headline">You Can Recover Lost Revenue. You Can't Recover Lost Time</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">أغلى مورد في أعمالك...  ليس المال.<br>بل الوقت.<br>CASHIN يساعدك على استثمار كل دقيقة بكفاءة أكبر.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Your most valuable resource isn't money.<br>It's time.<br>Save it, optimize it, and invest it where it matters most.<br>CASHIN helps you make every minute count.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-15.jpg" alt="The Best Operations... Are The Ones Nobody Notices" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #15 &middot; Jul 19, 2026</div>
+            <h3 class="post-topic">Great Operations Are Invisible</h3>
+            <p class="post-headline">The Best Operations... Are The Ones Nobody Notices</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">أفضل العمليات...  هي التي تعمل بسلاسة دون أن تلاحظها.<br>وهذا هو معنى الكفاءة التشغيلية مع CASHIN.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">The best operations don't draw attention.<br>They run so smoothly that everything simply works.<br>That's operational excellence with CASHIN.</div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="part-section">
+        <div class="part-head">
+          <span class="part-index">Posts 16–20</span>
+          <h2>Business Growth &amp; Thought Leadership</h2>
+        </div>
+        <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-16.jpg" alt="Don't Build Better Operations. Build Better Systems" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #16 &middot; Jul 20, 2026</div>
+            <h3 class="post-topic">The Best Companies Don't Manage Operations. They Design Them</h3>
+            <p class="post-headline">Don't Build Better Operations. Build Better Systems</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">أفضل الشركات...  لا تكتفي بإدارة العمليات.<br>بل تصممها لتكون أكثر كفاءة وذكاءً وقابلية للنمو.<br>CASHIN يساعدك على بناء عمليات تعمل بأفضل أداء.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Great operations don't happen by chance.<br>They're designed to be efficient, scalable, and intelligent.<br>CASHIN helps you build operations that perform.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-17.jpg" alt="Your Competitive Advantage Isn't Speed. It's Decision Speed" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #17 &middot; Jul 21, 2026</div>
+            <h3 class="post-topic">How Fast Can Your Business Decide?</h3>
+            <p class="post-headline">Your Competitive Advantage Isn't Speed. It's Decision Speed</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">سرعة الأعمال...  لا تُقاس بسرعة التنفيذ فقط.<br>بل بسرعة اتخاذ القرار الصحيح في الوقت المناسب.<br>CASHIN يسرّع اتخاذ القرار بذكاء لحظي.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Speed isn't just about execution.<br>It's about making the right decision at the right time.<br>CASHIN accelerates decision-making with real-time intelligence.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-18.jpg" alt="Growth Doesn't Create Problems. Complexity Does" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #18 &middot; Jul 22, 2026</div>
+            <h3 class="post-topic">Growth Isn't Your Biggest Challenge</h3>
+            <p class="post-headline">Growth Doesn't Create Problems. Complexity Does</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">النمو...  ليس هو التحدي الحقيقي.<br>التحدي هو إدارته بكفاءة.<br>CASHIN يساعدك على التوسع بثقة وكفاءة.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Growth isn't the challenge.<br>Managing it efficiently is.<br>CASHIN helps your operations scale with confidence.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-19.jpg" alt="Control Isn't About Watching Everything. It's About Understanding Everything" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #19 &middot; Jul 23, 2026</div>
+            <h3 class="post-topic">Control</h3>
+            <p class="post-headline">Control Isn't About Watching Everything. It's About Understanding Everything</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">التحكم الحقيقي...  لا يعني مراقبة كل شيء.<br>بل فهم ما يحدث لاتخاذ القرار الصحيح.<br>CASHIN يحول الرؤية إلى ذكاء عملي.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">Real control doesn't come from monitoring more.<br>It comes from understanding what truly matters.<br>CASHIN turns visibility into intelligence.</div>
+            </div>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-media">
+            <img src="post-20.jpg" alt="The Future Isn't Something You Wait For. It's Something You Build" loading="lazy">
+          </div>
+          <div class="post-body">
+            <div class="post-meta">Post #20 &middot; Jul 24, 2026</div>
+            <h3 class="post-topic">The Future Is Built Before It Arrives</h3>
+            <p class="post-headline">The Future Isn't Something You Wait For. It's Something You Build</p>
+            <div class="post-captions">
+              <div class="cap cap-ar" dir="rtl" lang="ar">المستقبل...  لا يأتي من تلقاء نفسه.<br>بل يُبنى بقرارات أذكى، كل يوم.<br>CASHIN يساعدك على بناء مستقبل أعمالك.</div>
+              <div class="cap cap-en" dir="ltr" lang="en">The future doesn't happen on its own.<br>It's built through smarter decisions, every single day.<br>CASHIN helps you build what's next.</div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+</main>
+
+<footer>CASHIN · Marketing Projects — July 2026 Content Calendar</footer>
+
+</body>
+</html>
