@@ -158,7 +158,11 @@ table.pricing tr:nth-child(2n) td { background: rgb(251, 252, 254); }
 
 .note b { color: rgb(74, 58, 15); }
 
-footer { text-align: center; padding: 30px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); }</style>
+footer { text-align: center; padding: 30px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); }
+
+.suboption-title { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--sf-gold, var(--navy)); display:flex; align-items:center; gap:8px; }
+.suboption-title::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--sf-gold, var(--navy)); flex-shrink:0; }
+.option-divider { border: none; border-top: 1px dashed var(--line); margin: 30px 0; }</style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conference Hall Pricing Comparison — CASHIN</title>
@@ -181,59 +185,58 @@ footer { text-align: center; padding: 30px; color: var(--muted); font-size: 12.5
 
   <section class="compare">
     <div class="compare-grid">
-      <div class="chip" role="button" tabindex="0">
+      <a class="chip" href="#fs">
         <div class="bar" style="background:var(--fs-green)"></div>
         <h3>Four Seasons Riyadh</h3>
         <div class="meta"><span>Capacity</span><b class="num">100–1000+</b></div>
         <div class="meta"><span>Ballroom</span><b>Kingdom Ballroom</b></div>
         <div class="price num">SAR 270,000 – 600,000</div>
         <div class="goto">View details ↓</div>
-      </div>
+      </a>
 
-      <div class="chip" role="button" tabindex="0">
+      <a class="chip" href="#dt">
         <div class="bar" style="background:var(--dt-blue)"></div>
         <h3>DoubleTree by Hilton</h3>
         <div class="meta"><span>Capacity</span><b class="num">150 Pax</b></div>
         <div class="meta"><span>Service</span><b>Coffee Break + Lunch</b></div>
         <div class="price num">SAR 70,000 + VAT</div>
         <div class="goto">View details ↓</div>
-      </div>
+      </a>
 
-      <div class="chip" role="button" tabindex="0">
+      <a class="chip" href="#nc">
         <div class="bar" style="background:var(--nc-gold)"></div>
         <h3>Narcissus The Royal</h3>
         <div class="meta"><span>Date</span><b class="num">27/09/2026</b></div>
         <div class="meta"><span>Capacity</span><b class="num">150 Pax</b></div>
         <div class="price num">SAR 86,250</div>
         <div class="goto">View details ↓</div>
-      </div>
+      </a>
 
-      <div class="chip" role="button" tabindex="0">
+      <a class="chip" href="#sf">
         <span class="badge-rec">Best Fit ⭐</span>
         <div class="bar" style="background:var(--sf-gold)"></div>
         <h3>Sofitel Riyadh</h3>
-        <div class="meta"><span>Date</span><b class="num">20/09/2026</b></div>
-        <div class="meta"><span>Capacity</span><b class="num">500 Guests</b></div>
-        <div class="price num">SAR 250,000</div>
+        <div class="meta"><span>Princess Nouf Ballroom</span><b class="num">SAR 250,000</b></div>
+        <div class="meta"><span>Princess Seetah Ballroom</span><b class="num">SAR 126,500</b></div>
         <div class="goto">View details ↓</div>
-      </div>
+      </a>
 
-      <div class="chip" role="button" tabindex="0">
+      <a class="chip" href="#rc">
         <div class="bar" style="background:var(--rc-blue)"></div>
         <h3>The Ritz-Carlton</h3>
         <div class="meta"><span>Duration</span><b>3 days (setup + event + dismantle)</b></div>
         <div class="meta"><span>Event Day</span><b class="num">SAR 200,000</b></div>
         <div class="price num">SAR 440,000 + VAT</div>
         <div class="goto">View details ↓</div>
-      </div>
+      </a>
 
-      <div class="chip" role="button" tabindex="0">
+      <a class="chip" href="#via">
         <div class="bar" style="background:var(--via-plum)"></div>
         <h3>VIA Riyadh</h3>
         <div class="meta"><span>Status</span><b>Awaiting full details</b></div>
         <div class="price num">SAR 450,000</div>
         <div class="goto">View details ↓</div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -381,11 +384,13 @@ footer { text-align: center; padding: 30px; color: var(--muted); font-size: 12.5
           <img class="brand-logo" src="data:image/png;base64,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" alt="Sofitel">
           <div>
             <h2>Sofitel Riyadh Hotel &amp; Convention Centre</h2>
-            <div class="sub">Princess Nouf Bint Abdulaziz Ballroom A &amp; B</div>
+            <div class="sub">Two ballroom options quoted</div>
           </div>
         </div>
       </div>
       <div class="body">
+
+        <div class="suboption-title">Princess Nouf Bint Abdulaziz Ballroom A &amp; B</div>
         <div class="facts">
           <div class="fact"><div class="label">Date</div><div class="value num">20/09/2026</div></div>
           <div class="fact"><div class="label">Capacity</div><div class="value num">500 Guests</div></div>
@@ -405,6 +410,40 @@ footer { text-align: center; padding: 30px; color: var(--muted); font-size: 12.5
         </div>
         <div class="note">
           <b>Negotiation note:</b> If approved, we will negotiate billing based on 200 people; in exchange, the difference will be offset in the Setup Day value (installation and dismantling), as the hotel indicated this value will be determined later.
+        </div>
+
+        <hr class="option-divider">
+
+        <div class="suboption-title">Princess Seetah Bint Abdulaziz Ballroom</div>
+        <div class="facts">
+          <div class="fact"><div class="label">Date</div><div class="value num">22/09/2026</div></div>
+          <div class="fact"><div class="label">Capacity</div><div class="value num">150 Guests</div></div>
+          <div class="fact"><div class="label">Minimum Required Revenue (Excl. VAT)</div><div class="value num">SAR 110,000</div></div>
+        </div>
+        <table class="pricing">
+          <tbody>
+            <tr><td>Total Event Charges (Excl. VAT)</td><td class="num">SAR 110,000</td></tr>
+            <tr><td>15% VAT</td><td class="num">SAR 16,500</td></tr>
+            <tr><td><b>Total Quote (Incl. VAT)</b></td><td class="num"><b>SAR 126,500</b></td></tr>
+          </tbody>
+        </table>
+        <div class="includes">
+          <div class="label">Price Includes</div>
+          <ul>
+            <li>Theatre-style setup for 150 guests</li>
+            <li>Dinner buffet for 150 guests, served exclusively at Zeline restaurant</li>
+            <li>Any additional guests beyond this number are charged extra</li>
+            <li>Complimentary basic wireless internet (50 Mbps)</li>
+            <li>Standard AV equipment (1 wireless mic, projector, basic PA system, laser pointer, flip charts and markers, electronic signage)</li>
+            <li>Does not include flowers or Saudi coffee (available at extra cost)</li>
+            <li>Valet parking available at SAR 50 + 15% VAT per car</li>
+          </ul>
+        </div>
+        <div class="note">
+          <b>Notes:</b> The offer is valid until <span class="num">15/07/2026</span>. The venue is not currently being held and is subject to availability upon confirmation. Minimum revenue policy: any reduction in guest count does not change the total agreed cost.
+        </div>
+        <div class="note">
+          <b>Access note:</b> Guests enter through the hotel's main entrance — there is no separate/private entrance for this ballroom.
         </div>
       </div>
     </article>
