@@ -31,6 +31,14 @@
       "status_label": "Live ",
       "cta_label": "Open calendar",
       "description": "Twenty bilingual posts for July 2026 — AI, digital transformation, automation, and growth. Ready to post."
+    },
+    {
+      "title": "Events —  Financial Comparison",
+      "description": "Two agency bids for the launch event compared line by line: cost drivers, strengths, scope gaps, and the recommended award with negotiation conditions.",
+      "link": "nextfuel-financial-comparison-.html",
+      "status": "live",
+      "status_label": "Ready for review",
+      "cta_label": "Open comparison"
     }
   ]
 }
