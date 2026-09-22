@@ -39,6 +39,14 @@
       "status": "live",
       "status_label": "Ready for review",
       "cta_label": "Open comparison"
+    },
+    {
+      "title": "Van Branding — 360° Preview",
+      "description": "Two partial-wrap options for the Peugeot Boxer 2025 van, shown in an interactive 360° viewer — eight angles per option.",
+      "link": "van-360.html",
+      "status": "concept",
+      "status_label": "Concept · For approval",
+      "cta_label": "Open 360° preview"
     }
   ]
 }
