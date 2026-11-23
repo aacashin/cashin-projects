@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>تقرير مختصر | رعاية ومشاركة كاشن في WEC 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#003087; --navy2:#0A3F9E; --teal:#32D8D4; --blue:#349DF4;
+  --page:#F8FAFC; --surface:#FFFFFF; --alt:#F3F6FA;
+  --border:#DCE3EF; --border2:#E3E8F1;
+  --text:#101828; --body:#3A4A61; --muted:#5B6B82;
+  --on-navy:#C7D4EE; --on-navy-muted:#8FA6D1;
+  --yellow-bg:#FEF3C7; --yellow-tx:#92400E;
+  --green-tx:#166534; --green-bd:#16A34A;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --page:#0B1A3A; --surface:#10244D; --alt:#132A57;
+    --border:#23406F; --border2:#1E3A68;
+    --text:#F1F5FB; --body:#C7D4EE; --muted:#9FB3D9;
+    --yellow-bg:#4A3A12; --yellow-tx:#FDE68A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --page:#0B1A3A; --surface:#10244D; --alt:#132A57;
+  --border:#23406F; --border2:#1E3A68;
+  --text:#F1F5FB; --body:#C7D4EE; --muted:#9FB3D9;
+  --yellow-bg:#4A3A12; --yellow-tx:#FDE68A;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; background:var(--page); color:var(--body);
+  font-family:"IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size:17px; line-height:1.75;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+bdi{unicode-bidi:isolate}
+.wrap{max-width:1040px; margin:0 auto; padding:0 24px}
+
+/* Header */
+.masthead{background:var(--navy); color:#fff; padding-top:env(safe-area-inset-top,0px)}
+.masthead .wrap{padding-top:28px; padding-bottom:44px}
+.topline{display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap}
+.topline img{height:30px; width:auto; display:block}
+.kind{color:var(--teal); font-weight:600; font-size:15px}
+.masthead h1{margin:40px 0 10px; font-size:clamp(26px,4.4vw,42px); line-height:1.35; font-weight:700; color:#fff}
+.masthead h1 span{display:block; font-weight:500; color:var(--on-navy); font-size:.62em; margin-top:6px}
+.facts{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:28px}
+.fact{background:var(--navy2); border-radius:12px; padding:16px 18px; border-right:4px solid var(--teal)}
+.fact small{display:block; color:var(--on-navy-muted); font-size:14px}
+.fact strong{display:block; color:#fff; font-size:18px; font-weight:600; line-height:1.5}
+
+/* Sections */
+main{padding:12px 0 40px}
+section{padding:36px 0; border-bottom:1px solid var(--border2)}
+section:last-of-type{border-bottom:0}
+h2{margin:0 0 16px; color:var(--text); font-size:24px; font-weight:700; display:flex; align-items:baseline; gap:12px}
+h2 .n{color:var(--teal); font-weight:700; font-size:20px}
+p{margin:0 0 12px; max-width:72ch}
+.note{font-size:15px; color:var(--muted)}
+
+/* Tables */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; border-radius:10px; border:1px solid var(--border); background:var(--surface)}
+table{width:100%; border-collapse:collapse; min-width:560px; font-size:16px}
+thead th{background:var(--navy2); color:#fff; font-weight:600; text-align:right; padding:12px 16px; white-space:nowrap}
+tbody td{padding:12px 16px; border-top:1px solid var(--border2); color:var(--text); vertical-align:top}
+tbody tr:nth-child(even) td{background:var(--alt)}
+td.num{white-space:nowrap; font-weight:600}
+td.tier{font-weight:700}
+td.dim{color:var(--muted)}
+tr.top td.tier{border-right:4px solid var(--teal)}
+
+td.c{text-align:center}
+th.c{text-align:center}
+td.usd{color:var(--muted); font-size:14px; white-space:nowrap}
+.yes{color:var(--green-tx); font-weight:700}
+:root[data-theme="dark"] .yes{color:#86EFAC}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .yes{color:#86EFAC}}
+.no{color:var(--muted)}
+tr.group td{background:var(--alt); color:var(--muted); font-size:14px; font-weight:600; padding:8px 16px}
+.chip.ok{background:#DCFCE7; color:var(--green-tx)}
+.common{background:var(--surface); border:1px solid var(--border); border-right:4px solid var(--teal); border-radius:12px; padding:14px 18px; margin-top:14px; font-size:16px; color:var(--text); max-width:none}
+.common b{display:block; margin-bottom:4px}
+.star{color:#D4A20A; font-size:1.05em}
+tr.station td{background:var(--yellow-bg) !important}
+tr.station td.dim{color:var(--yellow-tx)}
+/* Callouts */
+.points{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:16px}
+.point{background:var(--surface); border:1px solid var(--border); border-right:4px solid var(--teal); border-radius:12px; padding:14px 18px; color:var(--text); font-size:16px}
+
+.booth{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:12px; margin:16px 0}
+.cell{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px}
+.cell small{display:block; color:var(--muted); font-size:14px}
+.cell strong{display:block; color:var(--text); font-size:22px; font-weight:700; line-height:1.4}
+.cell span{display:block; color:var(--muted); font-size:14px}
+.cell.key{border-right:4px solid var(--teal)}
+
+.confirm{background:var(--yellow-bg); color:var(--yellow-tx); border-radius:10px; padding:12px 16px; font-size:15px; font-weight:500; max-width:none}
+
+.entities{display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:12px 0 14px}
+.entities li{background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 14px; color:var(--text); font-weight:500; font-size:16px}
+
+.chip{display:inline-block; border-radius:6px; padding:2px 10px; font-size:14px; font-weight:600; white-space:nowrap}
+.chip.held{background:var(--yellow-bg); color:var(--yellow-tx)}
+.legend{display:flex; flex-wrap:wrap; gap:18px; margin:0 0 14px; font-size:15px; color:var(--body)}
+.legend i{display:inline-block; width:14px; height:14px; border-radius:3px; vertical-align:-2px; margin-left:6px}
+.legend .y{background:#FACC15}
+.legend .g{background:var(--green-bd)}
+
+.sources ul{margin:8px 0 0; padding-right:20px; font-size:15px; color:var(--muted); overflow-wrap:anywhere}
+.sources h2{font-size:18px}
+
+footer{border-top:1px solid var(--border); padding:18px 0 28px; font-size:14px; color:var(--muted)}
+footer .wrap{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .facts{grid-template-columns:1fr}
+  .points{grid-template-columns:1fr}
+  .booth{grid-template-columns:1fr}
+  .masthead h1{margin-top:28px}
+  section{padding:28px 0}
+}
+@media print{
+  body{background:#fff; font-size:12pt}
+  .masthead{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  thead th, .fact, .chip, .confirm{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="topline">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUwAAABDCAYAAAD3Tzw+AAAEQklEQVR4nO3dW3KrMBBFUZzK/KfM/bhFlYtgDKgfp1t7DSARUuu4MQ+/1nVdgAFPCuhlPgogwO/yrOCriNqY1nOoHCgWx3r0N7yOeXS8nmsRObaR/3X1/1jUhnftD43x12oUaC3iQ3X7H8ofFvC3LsI18JM9AMiLPgNZE/4ncAmBOc5jcysERnZwKcwBcsiuPYGJIyoFmx3ayCO57gQm9hQLVXFMmBCBOcZzI2eEhHIwKY8NPuTWnMDERq44D1QYI2xJrTmB+ZzUQg7qdCyAGwJTG0H2F3MyH5k1JzAhU4zACYk6JTCfiVw8iUIRw5wgBYEJoIr0D0qeJZ9b5EtD0osdLaQ+a06HeR/3Rx77VsTWRV5hTtAMgQkLV8NQ9i00KCXtw5LARDRCExZSQtPqO8xZNkH223sU51lxTIALOkyM4rtEZAmvPa6SX0cw2KErhZXQMy86zDgWi6oa2qrjAkwRmLE6d1aEJrKE1R6BeY1SGCiNZU95bOgtpPYIzBidO8s9flYCbXHRJ95rmSNQuvxs7gxr1YX7BSA6zO8UN4zVmCLCbF3oOhHHtc7oMP1V77AsvRcz84Jy6DBzKIVF1ljoPOHFraYIzHPKm1l5bHcRnNhYfYC71BOB6UupkzyjMk66TiyLTj3+QWB+5r1p1YpCbTyEJkaZ1xCBWVvkG9Mz0G3OS/LUnMD0oxY+VymOm9Cck1wtWgVmt4KOOh7VF3K8Fr1i7VZjiGNWO3SYOENoIptUDRKYPqQWedBr0eo4Cc35yJyJ/SyiX64mij4OmWK4QCU4u9QaYg3XDR0mnlDrOtGfRK1ZP0uu+kNdkWY7/vfjjez8omrN83/QKd+T/qYvjw6zchFkjb3SafkZOk+0tgWmdYErbF7kIjzhIbWePL/DnDE0CYdjXvMyY40hcZ95X/SpVNDZY+1yWv4J3SbKew9Mzy5AeSMjFqEJCyl1FHlbkfKruyzGpBIEivO7pzJXqC28jva3FUVdtuenCo5F3zbR6YMCcKfwmz7dX1HWHffeIlNok3F0Sj5b8XfssiqclgNWwvbfp+8w1QJgJsw9IIpnyWHhbkdLBwxrIY3GWWDO0Ol0PB3fRIdSRgiqzj1yuNfDtw6TgsxRdd6/3TamelsZcMmVq+TpbwiBG6+1pV6QxTWvrn6HWbXjOdP5dHzTObjU5x553GrjzkUfCjRW1HyzrsBFd6+Sd9lcnTuvJ6qta7XxIp5LjTy5rYi3zvxXZQ74cMCszPfoyH2YVQKjssg5rrKeVcaJhkZvXK/Ybc7YcV09ZvW1VB8f9JjWjNWTPhWDc0Tnzk91HVXHBX1mtWP9aORswdmV2hqqjQeT8nqWXPUHsGY8Hd/cPXaVtVMZB2ozqaOI92HuB1o9tDI2cNbTVtux8pw4OhjeR691rZ5fCBRRLAQlZCm8cR11eJ0tEJIogcDEiE9B9ylICUaU9g/qe7ORNEp7ZQAAAABJRU5ErkJggg==" alt="كاشن" width="149" height="30">
+      <div class="kind">تقرير مختصر للإدارة</div>
+    </div>
+    <h1>رعاية ومشاركة كاشن في WEC 2027<span>مؤتمر الطاقة العالمي — الرياض</span></h1>
+    <div class="facts">
+      <div class="fact"><small>التاريخ</small><strong><bdi>26</bdi>–<bdi>29</bdi> أبريل <bdi>2027</bdi></strong></div>
+      <div class="fact"><small>المكان</small><strong>مركز واجهة الرياض للمعارض والمؤتمرات</strong></div>
+      <div class="fact"><small>جناح كاشن المشار إليه</small><strong><bdi>#4330</bdi> — <bdi>184</bdi> م²</strong></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="packages">
+    <h2><span class="n">1</span>باقات الرعاية: الأسعار والمميزات</h2>
+    <p>الأسعار بالريال محوّلة من الدولار بسعر <bdi>3.75</bdi>، والكتيّب ينص على أنها شاملة لضريبة القيمة المضافة.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>البند</th><th class="c">شريك المؤتمر</th><th class="c">البلاتينية</th><th class="c">الذهبية</th><th class="c">الفضية</th><th class="c">البرونزية</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tier">السعر (ريال)</td><td class="num c"><bdi>3,750,000</bdi></td><td class="num c"><bdi>2,156,250</bdi></td><td class="num c"><bdi>1,509,375</bdi></td><td class="num c"><bdi>1,078,125</bdi></td><td class="num c"><bdi>646,875</bdi></td></tr>
+          <tr><td class="dim">السعر (دولار)</td><td class="usd c"><bdi>1,000,000</bdi></td><td class="usd c"><bdi>575,000</bdi></td><td class="usd c"><bdi>402,500</bdi></td><td class="usd c"><bdi>287,500</bdi></td><td class="usd c"><bdi>172,500</bdi></td></tr>
+          <tr class="group"><td colspan="6">الحضور والتحدث</td></tr>
+          <tr><td>تصاريح حضور كاملة</td><td class="c"><bdi>40</bdi></td><td class="c"><bdi>20</bdi></td><td class="c"><bdi>16</bdi></td><td class="c"><bdi>10</bdi></td><td class="c"><bdi>6</bdi></td></tr>
+          <tr><td>فرص تحدث للرئيس التنفيذي والقيادات</td><td class="c"><bdi>2</bdi></td><td class="c"><bdi>2</bdi></td><td class="c"><bdi>2</bdi></td><td class="c"><bdi>1</bdi></td><td class="c no">—</td></tr>
+          <tr><td>مقابلة أو جلسة حوار للرئيس التنفيذي</td><td class="c yes">✓</td><td class="c yes">✓</td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>دعوات طاولة الرؤساء التنفيذيين / الطاولة الوزارية</td><td class="c"><bdi>2</bdi> / <bdi>2</bdi></td><td class="c"><bdi>1</bdi> / <bdi>1</bdi></td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>الغداء التنفيذي ومواقف الرعاة (من التصاريح)</td><td class="c"><bdi>15</bdi></td><td class="c"><bdi>8</bdi></td><td class="c"><bdi>6</bdi></td><td class="c"><bdi>4</bdi></td><td class="c"><bdi>2</bdi></td></tr>
+          <tr><td>غرفة اجتماعات خاصة طوال المؤتمر</td><td class="c yes">✓</td><td class="c yes">✓</td><td class="c yes">✓</td><td class="c dim">مشتركة</td><td class="c no">—</td></tr>
+          <tr class="group"><td colspan="6">ظهور العلامة التجارية</td></tr>
+          <tr><td>إعلانات رعاية على وسائل التواصل (حد أدنى)</td><td class="c"><bdi>6</bdi></td><td class="c"><bdi>3</bdi></td><td class="c"><bdi>3</bdi></td><td class="c"><bdi>1</bdi></td><td class="c"><bdi>1</bdi></td></tr>
+          <tr><td>رسائل بريدية للحضور باسم الراعي</td><td class="c"><bdi>3</bdi></td><td class="c"><bdi>2</bdi></td><td class="c"><bdi>1</bdi></td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>أعمدة عرض حصرية في الممر الرئيسي</td><td class="c"><bdi>2</bdi></td><td class="c"><bdi>1</bdi></td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>الشعار على الأعلام الخارجية</td><td class="c yes">✓</td><td class="c yes">✓</td><td class="c yes">✓</td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>الشعار على الجدار المقابل لقاعة 8A</td><td class="c yes">✓</td><td class="c yes">✓</td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>الشعار عند مدخل الغداء التنفيذي</td><td class="c yes">✓</td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td></tr>
+          <tr><td>خصم <bdi>15%</bdi> على سعر مساحة العرض</td><td class="c yes">✓</td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td><td class="c no">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="common">
+      <b>مشترك بين جميع الباقات</b>
+      الشعار في الكتيّبات والموقع والنشرات البريدية والتطبيق، والإشارة في البيانات الصحفية، وقائمة الحضور (المسمى والجهة والدولة) وقائمة الإعلام، وصالة الرعاة، ومقاعد مميزة في الحفلات، ودرع تذكاري، والشعار على لوحات الواجهة والمداخل والتسجيل والجلسات العامة والقاعات والشاشات الرقمية وأعمدة المعرض.
+    </div>
+  </section>
+
+  <section id="booth">
+    <h2><span class="n">2</span>المشاركة كجناح عارض</h2>
+    <p>تُسعَّر مساحة العرض بالمتر المربع، والسعر شامل للضريبة ويخص المساحة وحدها. قائمة مزايا باقات الرعاية لا تتضمن مساحة عرض.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>الفئة</th><th>سعر المتر (ريال)</th><th>سعر المتر (دولار)</th><th>تكلفة جناح كاشن <bdi>184</bdi> م² (ريال)</th></tr></thead>
+        <tbody>
+          <tr class="top"><td class="tier">السعر المبكر — حتى <bdi>30</bdi> نوفمبر <bdi>2026</bdi></td><td class="num"><bdi>3,018.75</bdi></td><td class="usd"><bdi>805</bdi></td><td class="num"><bdi>555,450</bdi></td></tr>
+          <tr><td class="tier">السعر العادي</td><td class="num"><bdi>3,450</bdi></td><td class="usd"><bdi>920</bdi></td><td class="num"><bdi>634,800</bdi></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="confirm" style="margin-top:14px">الجناح المشار إليه في بيانات كاشن هو <bdi>#4330</bdi> بمساحة <bdi>184</bdi> م²، ولا يظهر بهذا الرقم في مخطط المعرض. رقم الجناح ومساحته وسعره النهائي بحاجة إلى تأكيد المنظّم.</p>
+  </section>
+
+  <section id="fuel">
+    <h2><span class="n">3</span>مشغّلو محطات الوقود في المخطط</h2>
+    <div class="legend">
+      <span><i class="y"></i>الأصفر في المخطط: محجوز</span>
+      <span><i class="g"></i>الأخضر في المخطط: مؤكد</span>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>المشغّل</th><th>الحالة</th><th>الجناح</th><th>المساحة</th><th>ملاحظة</th></tr></thead>
+        <tbody>
+          <tr><td class="tier"><span class="star" aria-label="مشغّل محطات وقود">★</span> ساسكو (SASCO)</td><td><span class="chip held">محجوز مبدئيًا</span></td><td><bdi>H3-C40</bdi></td><td><bdi>100</bdi> م²</td><td class="dim">—</td></tr>
+          <tr><td class="tier"><span class="star" aria-label="مشغّل محطات وقود">★</span> شل (Shell)</td><td><span class="chip held">محجوز مبدئيًا</span></td><td><bdi>H1-G10</bdi></td><td><bdi>213.75</bdi> م²</td><td>الجهة المحلية الممثلة بحاجة إلى تأكيد</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:12px">الحجز المبدئي لا يعني مشاركة مؤكدة لأي من الجهتين.</p>
+  </section>
+
+  <section id="entities">
+    <h2><span class="n">4</span>جميع الجهات الواردة في المخطط</h2>
+    <div class="legend">
+      <span><i class="g"></i>أخضر: مؤكد (<bdi>19</bdi> جهة)</span>
+      <span><i class="y"></i>أصفر: محجوز مبدئيًا (<bdi>42</bdi> جهة)</span>
+      <span><span class="star">★</span> مشغّل محطات وقود</span>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>الجهة</th><th>الفئة</th><th>الجناح</th><th class="c">المساحة م²</th><th>الحالة</th></tr></thead>
+        <tbody>
+          <tr><td class="tier">وزارة الطاقة</td><td class="dim">جهة حكومية</td><td><bdi>H2-D40</bdi></td><td class="c"><bdi>1000.5</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">البحري (Bahri)</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-A20</bdi></td><td class="c"><bdi>190</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">اليمامة (Yamamah)</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-B20</bdi></td><td class="c"><bdi>190</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">SSEM</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-H10</bdi></td><td class="c"><bdi>285</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">Transit</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-C20</bdi></td><td class="c"><bdi>190</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">Chint Electric</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-D30</bdi></td><td class="c"><bdi>95</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">Fluor</td><td class="dim">طاقة وصناعة</td><td><bdi>H4-A25</bdi></td><td class="c"><bdi>42</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">MEMF</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-G30</bdi></td><td class="c"><bdi>150</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">الصناعات الكهربائية (EIC)</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-E20</bdi></td><td class="c"><bdi>84</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">إمكان القابضة (Emkan Holding)</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-H40</bdi></td><td class="c"><bdi>130</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">TDP</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-E40</bdi></td><td class="c"><bdi>100</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">دار مصادر (Dar Massader)</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-A40</bdi></td><td class="c"><bdi>120</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">مصنع تيناس (Tenas Factory)</td><td class="dim">طاقة وصناعة</td><td><bdi>H4-A40</bdi></td><td class="c"><bdi>60</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">المزروعي (Mazrui)</td><td class="dim">طاقة وصناعة</td><td><bdi>H4-C40</bdi></td><td class="c"><bdi>120</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">البابطين (Babtain)</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-D50</bdi></td><td class="c"><bdi>35</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">Solar Arabia</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-B40</bdi></td><td class="c"><bdi>55</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">EGI</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-EQ-9</bdi></td><td class="c"><bdi>18</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">Yellow Door Energy</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-EQ-10</bdi></td><td class="c"><bdi>18</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr><td class="tier">Euro Group E&amp;C</td><td class="dim">طاقة وصناعة</td><td><bdi>H5-EQ-19</bdi></td><td class="c"><bdi>9</bdi></td><td><span class="chip ok">مؤكد</span></td></tr>
+<tr class="station"><td class="tier"><span class="star" aria-label="مشغّل محطات وقود">★</span> ساسكو (SASCO)</td><td class="dim">مشغّل محطات وقود</td><td><bdi>H3-C40</bdi></td><td class="c"><bdi>100</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr class="station"><td class="tier"><span class="star" aria-label="مشغّل محطات وقود">★</span> شل (Shell)</td><td class="dim">مشغّل محطات وقود</td><td><bdi>H1-G10</bdi></td><td class="c"><bdi>213.75</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">أرامكو السعودية</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-E40</bdi></td><td class="c"><bdi>552</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">سابك</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-H10</bdi></td><td class="c"><bdi>258.75</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">أكوا</td><td class="dim">طاقة وصناعة</td><td><bdi>H4-B40</bdi></td><td class="c"><bdi>252</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">الفنار</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-E15</bdi></td><td class="c"><bdi>213.75</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">غازكو (GASCO)</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-D20</bdi></td><td class="c"><bdi>440</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">طاقة (TAQA)</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-D40</bdi></td><td class="c"><bdi>216</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">هيوماين (HUMAIN)</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-E10</bdi></td><td class="c"><bdi>213.75</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">OSP</td><td class="dim">طاقة وصناعة</td><td><bdi>H2-B40</bdi></td><td class="c"><bdi>241.5</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Saudi Energy</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-G40</bdi></td><td class="c"><bdi>612</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Principal Buyer</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-B45</bdi></td><td class="c"><bdi>252</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">ميتسوبيشي باور</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-D40</bdi></td><td class="c"><bdi>80</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Tecnicas Reunidas</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-B40</bdi></td><td class="c"><bdi>100</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">الشرهان للطاقة</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-G10</bdi></td><td class="c"><bdi>240</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">الجميح للطاقة والمياه</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-F20</bdi></td><td class="c"><bdi>112</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">بن عميرة (Bin Omairah)</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-F30</bdi></td><td class="c"><bdi>160</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">كابلات الرياض</td><td class="dim">طاقة وصناعة</td><td><bdi>H4-A30</bdi></td><td class="c"><bdi>150</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Bright Wires</td><td class="dim">طاقة وصناعة</td><td><bdi>H4-B50</bdi></td><td class="c"><bdi>60</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Saudi Diesel</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-A50</bdi></td><td class="c"><bdi>60</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Setra</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-B10</bdi></td><td class="c"><bdi>90</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">SADA</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-B30</bdi></td><td class="c"><bdi>61.75</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">UTEC</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-B15</bdi></td><td class="c"><bdi>66</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Lucy Electric</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-B35</bdi></td><td class="c"><bdi>95</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">WEG</td><td class="dim">طاقة وصناعة</td><td><bdi>H3-B30</bdi></td><td class="c"><bdi>100</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">Alpha Sense</td><td class="dim">طاقة وصناعة</td><td><bdi>H1-EQ-27</bdi></td><td class="c"><bdi>18</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">بيكر هيوز</td><td class="dim">خدمات وتقنية عالمية</td><td><bdi>H1-F10</bdi></td><td class="c"><bdi>213.75</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">هاليبرتون</td><td class="dim">خدمات وتقنية عالمية</td><td><bdi>H1-G40</bdi></td><td class="c"><bdi>126</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">SLB</td><td class="dim">خدمات وتقنية عالمية</td><td><bdi>H1-F40</bdi></td><td class="c"><bdi>216</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">هيتاشي</td><td class="dim">خدمات وتقنية عالمية</td><td><bdi>H1-C40</bdi></td><td class="c"><bdi>180</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">صندوق الاستثمارات العامة</td><td class="dim">جهة حكومية</td><td><bdi>H5-F40</bdi></td><td class="c"><bdi>120</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">كابسارك</td><td class="dim">جهة حكومية</td><td><bdi>H4-G40</bdi></td><td class="c"><bdi>252</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">وزارة النقل</td><td class="dim">جهة حكومية</td><td><bdi>H4-H30</bdi></td><td class="c"><bdi>100</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">وزارة الاقتصاد</td><td class="dim">جهة حكومية</td><td><bdi>H5-H40</bdi></td><td class="c"><bdi>120</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">وزارة البيئة والمياه والزراعة</td><td class="dim">جهة حكومية</td><td><bdi>H5-D30</bdi></td><td class="c"><bdi>95</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">الهيئة الملكية لمدينة الرياض</td><td class="dim">جهة حكومية</td><td><bdi>H5-D40</bdi></td><td class="c"><bdi>120</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">NRRC</td><td class="dim">جهة حكومية</td><td><bdi>H4-D30</bdi></td><td class="c"><bdi>100</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">روسيا (3 أجنحة)</td><td class="dim">جناح دولة</td><td><bdi>H3-H10 / H20 / H30</bdi></td><td class="c"><bdi>230</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">تركيا (جناحان)</td><td class="dim">جناح دولة</td><td><bdi>H2-D10 / C10</bdi></td><td class="c"><bdi>180</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">الهند</td><td class="dim">جناح دولة</td><td><bdi>H2-G40</bdi></td><td class="c"><bdi>299</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">مصر</td><td class="dim">جناح دولة</td><td><bdi>H2-F40</bdi></td><td class="c"><bdi>345</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+<tr><td class="tier">مجلس الكهرباء الصيني (4 أجنحة)</td><td class="dim">جناح دولة</td><td><bdi>H2-G20 / F20 / G30 / F30</bdi></td><td class="c"><bdi>595</bdi></td><td><span class="chip held">محجوز مبدئيًا</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:12px">الحالة مأخوذة من لون الجناح في المخطط: الأخضر مؤكد، والأصفر محجوز مبدئيًا ولا يعني مشاركة مؤكدة. الأسماء مكتوبة في المخطط بالإنجليزية، والأسماء العربية هنا ترجمة. لم تُدرج الأجنحة المكتوب عليها «RESERVED» دون اسم جهة، ولا مناطق الفعاليات.</p>
+  </section>
+
+  <section class="sources" id="sources">
+    <h2>المصادر</h2>
+    <ul>
+      <li>كتيّب المؤتمر: <bdi>WEC2027_Event_Brochure_6.11.26.pdf</bdi> (تحديث <bdi>6</bdi> نوفمبر <bdi>2026</bdi>)</li>
+      <li>كتيّب الرعاية: <bdi>WEC2027_General_Sponsorship_Brochure_6.11.26.pdf</bdi> (تحديث <bdi>6</bdi> نوفمبر <bdi>2026</bdi>)</li>
+      <li>مخطط المعرض: <bdi>WEC (11-11-2026)-V.40.pdf</bdi></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>سري وخاص — للاستخدام الداخلي</span>
+    <span>كاشن <bdi>2026</bdi></span>
+  </div>
+</footer>
+
+</body>
+</html>
