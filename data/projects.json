@@ -47,6 +47,14 @@
       "status": "concept",
       "status_label": "Concept · For approval",
       "cta_label": "Open 360° preview"
+    },
+    {
+      "title": "WEC 2027 — Sponsorship & Exhibiting Report",
+      "description": "Sponsorship tiers, booth pricing, and every exhibitor on the floor plan — with fuel station operators flagged.",
+      "link": "wec-2027.html",
+      "status": "live",
+      "status_label": "Ready for review",
+      "cta_label": "Open report"
     }
   ]
 }
