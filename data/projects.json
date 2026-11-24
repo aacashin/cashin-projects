@@ -55,6 +55,14 @@
       "status": "live",
       "status_label": "Ready for review",
       "cta_label": "Open report"
+    },
+    {
+      "title": "\"A Day With Omar Alrammah\" Episode Evaluation",
+      "description": "Zero to One's proposal for a special \"A Day With\" episode featuring Omar Alrammah: deliverables, pros and cons, the real cost per viewer, and conditions before approval.",
+      "link": "yawm-maa-evaluation.html",
+      "status": "live",
+      "status_label": "Ready for review",
+      "cta_label": "Open evaluation"
     }
   ]
 }
